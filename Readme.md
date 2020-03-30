@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Коршунов](https://up.htmlacademy.ru/adaptive/19/user/952175).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench/achievements).
 
 ---
 
