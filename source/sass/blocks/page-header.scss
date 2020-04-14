@@ -1,0 +1,10 @@
+.page-header {
+  @include OswaldMedium;
+  background-color: #ffffff;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $blackText;
+  margin: 0;
+  padding: 0;
+}

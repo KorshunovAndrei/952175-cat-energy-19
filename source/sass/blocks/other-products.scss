@@ -1,0 +1,23 @@
+.other-products {
+  border-bottom: 1px solid $grayBorder;
+  text-align: center;
+  padding: 20px;
+}
+
+.other-products__text {
+  @include OswaldRegular;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $blackText;
+  margin: 0;
+}
+
+.other-products__comment {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: $grayText;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}

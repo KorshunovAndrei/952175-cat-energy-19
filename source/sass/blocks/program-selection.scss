@@ -1,0 +1,35 @@
+.program-selection {
+  @include OswaldRegular;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.program-selection__top {
+  background-color: $greenBackground;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  margin: 0;
+  padding: 20px;
+}
+
+.program-selection__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.program-selection__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  text-transform: uppercase;
+}

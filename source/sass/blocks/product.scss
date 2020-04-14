@@ -1,0 +1,43 @@
+.product {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product__item {
+  border-bottom: 1px solid $grayBorder;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grayText;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  table {
+    width: 140px;
+    margin-bottom: 10px;
+  }
+}
+
+.product__title {
+  @include OswaldRegular;
+  width: 60px;
+  text-align: left;
+  margin-bottom: 10px;
+
+  a {
+    color: $blackText;
+  }
+}
+
+.product__property {
+  text-align: left;
+}
+
+.product__value {
+  text-align: right;
+}
