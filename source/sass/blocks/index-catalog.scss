@@ -3,13 +3,11 @@
   padding: 20px;
 }
 
-.index-catalog__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.index-catalog-list {
+  @include ClearList;
 }
 
-.index-catalog__item {
+.index-catalog-list__item {
   background-color: $grayBackground;
   font-family: "Arial", sans-serif;
   color: $grayText;
