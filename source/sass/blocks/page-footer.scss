@@ -1,0 +1,21 @@
+.page-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__bottom {
+  background-color: $grayBackground;
+  padding: 20px;
+}
+
+.page-footer__title {
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.page-footer__social {
+  border-top: 1px solid $grayBorder;
+  border-bottom: 1px solid $grayBorder;
+}

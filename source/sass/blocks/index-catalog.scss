@@ -1,0 +1,40 @@
+.index-catalog {
+  margin: 0;
+  padding: 20px;
+}
+
+.index-catalog-list {
+  @include ClearList;
+}
+
+.index-catalog-list__item {
+  background-color: $grayBackground;
+  font-family: "Arial", sans-serif;
+  color: $grayText;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 20px 24px;
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $grayBorder;
+  }
+
+  a {
+    @include OswaldRegular;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $blackText;
+  }
+}
+
+.index-catalog__title {
+  @include OswaldRegular;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 24px;
+  line-height: 37px;
+}

@@ -1,0 +1,15 @@
+.page-main {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.page-main__title {
+  @include OswaldRegular;
+  font-size: 36px;
+  line-height: 60px;
+  border-top: 1px solid $grayBorder;
+  border-bottom: 1px solid $grayBorder;
+  margin: 0;
+  padding: 20px;
+}

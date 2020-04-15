@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  margin: auto;
+  width: 280px;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &--selection {
+    background-color: $greenBtn;
+  }
+
+  &--order {
+    @include OswaldRegular;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: $greenBtn;
+  }
+
+  &--show {
+    @include OswaldRegular;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grayText;
+    background-color: $grayBtn;
+  }
+}
