@@ -24,3 +24,25 @@
 .about__item {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about__item {
+    width: 364px;
+    min-height: 230px;
+    margin-bottom: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__item {
+    width: 235px;
+    min-height: 230px;
+    margin-bottom: 20px;
+  }
+}

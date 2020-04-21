@@ -1,5 +1,4 @@
 .index-catalog {
-  margin: 0;
   padding: 20px;
 }
 
@@ -13,7 +12,7 @@
   color: $grayText;
   margin: 0;
   margin-bottom: 20px;
-  padding: 20px 24px;
+  padding: 20px 54px;
 
   p {
     margin: 0;
@@ -31,10 +30,24 @@
   }
 }
 
-.index-catalog__title {
+.index-catalog-list__title {
   @include OswaldRegular;
   text-transform: uppercase;
   margin: 0;
   font-size: 24px;
   line-height: 37px;
+  color: $blackText;
+}
+
+@media (min-width: $desktop-width) {
+  .index-catalog-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .index-catalog-list__item {
+    width: 570px;
+    min-height: 375px;
+    box-sizing: border-box;
+  }
 }

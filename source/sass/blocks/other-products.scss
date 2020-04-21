@@ -21,3 +21,38 @@
   margin-top: 5px;
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .other-products {
+    width: 320px;
+    min-height: 430px;
+    margin-top: 40px;
+    padding: 40px;
+    border: 1px solid $grayBorder;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .other-products__text {
+    width: 110px;
+    margin: auto;
+  }
+
+  .other-products__comment {
+    width: 130px;
+    margin: auto;
+  }
+
+  .other-products__link {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-products {
+    width: 245px;
+  }
+}

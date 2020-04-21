@@ -4,7 +4,32 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $blackText;
   margin: 0;
   padding: 0;
+}
+
+.page-header__top {
+  min-height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+    z-index: 1;
+    background-color: inherit;
+  }
 }

@@ -1,6 +1,5 @@
 .btn {
-  display: block;
-  margin: auto;
+  display: inline-block;
   width: 280px;
   font-size: 14px;
   line-height: 18px;
@@ -11,6 +10,7 @@
   padding-bottom: 10px;
 
   &--selection {
+    text-align: center;
     background-color: $greenBtn;
   }
 
@@ -28,5 +28,29 @@
     line-height: 20px;
     color: $grayText;
     background-color: $grayBtn;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn--selection {
+    width: 245px;
+  }
+
+  .btn--order {
+    width: 245px;
+  }
+
+  .btn--show {
+    width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn--order {
+    width: 170px;
+  }
+
+  .btn--show {
+    width: 170px;
   }
 }
