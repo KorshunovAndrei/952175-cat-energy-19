@@ -24,6 +24,7 @@
 
 .about__item {
   margin-bottom: 26px;
+  position: relative;
 
   &::before {
     content: "";
@@ -33,6 +34,17 @@
     background-color: $greenBackground;
     margin-right: 20px;
     float: left;
+  }
+
+  &--item1::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 }
 
