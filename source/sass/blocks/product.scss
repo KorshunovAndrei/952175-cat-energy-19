@@ -13,7 +13,7 @@
   display: flex;
   min-height: 210px;
 
-  a {
+  .product__item-link {
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -29,6 +29,7 @@
 .product__table {
   width: 140px;
   margin-bottom: 10px;
+  border-collapse: collapse;
 }
 
 .product__title {
@@ -37,8 +38,10 @@
   text-align: left;
   margin-bottom: 10px;
 
-  a {
+  .product__title-link {
     color: $blackText;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }
 
@@ -76,7 +79,8 @@
   .product__table {
     width: 100%;
 
-    td {
+    .product__property,
+    .product__value {
       border-bottom: 1px solid $grayBottom;
     }
   }

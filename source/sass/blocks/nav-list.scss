@@ -5,8 +5,8 @@
 
 .nav-list__item {
   border-top: 1px solid $grayBorder;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 
   .nav-list__link {
     color: $blackText;
@@ -28,7 +28,7 @@
 @media (min-width: $desktop-width) {
   .nav-list__item {
     .nav-list__link--index {
-      color: #ffffff;
+      color: $whiteColor;
     }
   }
 }
