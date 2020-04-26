@@ -1,9 +1,12 @@
 .program-selection {
   @include OswaldRegular;
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   text-align: center;
-  color: #ffffff;
+  color: $whiteColor;
+  min-height: 480px;
+  position: relative;
 }
 
 .program-selection__top {
@@ -12,9 +15,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
   margin: 0;
-  padding: 20px;
+  padding: 16px;
+  min-height: 272px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    min-height: 270px;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .program-selection__title {
@@ -24,7 +40,7 @@
   margin: 0;
   padding: 0;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 
 .program-selection__slogan {
@@ -32,4 +48,93 @@
   line-height: 14px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.program-selection__link {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    position: relative;
+    color: $blackText;
+    text-align: left;
+    width: 568px;
+    min-height: 820px;
+    margin: auto;
+    margin-bottom: 22px;
+  }
+
+  .program-selection__top {
+    background-color: $whiteColor;
+    background-image: none;
+    padding-left: 18px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    min-height: 0;
+
+    &::after {
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      width: 709px;
+      min-height: 609px;
+      bottom: -20px;
+    }
+  }
+
+  .program-selection__link {
+    position: absolute;
+    bottom: 508px;
+    left: 140px;
+  }
+
+  .program-selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .program-selection__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    min-width: 1440px;
+    min-height: 695px;
+    position: relative;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .program-selection__top {
+    margin: 0;
+    position: absolute;
+    top: 312px;
+    left: 396px;
+    transform: translate(-50%, -50%);
+    min-height: 0;
+
+    &::after {
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-repeat: no-repeat;
+      width: 522px;
+      min-height: 499px;
+      top: -48px;
+      left: 648px;
+    }
+  }
+
+  .program-selection__link {
+    position: absolute;
+    bottom: 162px;
+    left: 314px;
+    transform: translate(-51%, -50%);
+  }
 }

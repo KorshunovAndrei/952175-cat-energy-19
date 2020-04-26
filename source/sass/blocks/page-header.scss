@@ -1,10 +1,114 @@
 .page-header {
   @include OswaldMedium;
-  background-color: #ffffff;
+  background-color: $whiteColor;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $blackText;
   margin: 0;
   padding: 0;
+}
+
+.page-header__top {
+  min-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+
+.page-header__logo {
+  display: block;
+  width: 191px;
+  height: 38px;
+  background-image: url("../img/logo-mobile.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__toggle {
+  width: 24px;
+  height: 18px;
+  background-color: $whiteColor;
+  border: none;
+
+  &--on {
+    background-image: url("../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--off {
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    padding: 20px 0;
+  }
+
+  .page-header__top {
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  .page-header__logo {
+    width: 173px;
+    height: 58px;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+    margin-right: 96px;
+  }
+
+  .page-header__nav {
+    width: 438px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: 1440px;
+    min-height: 148px;
+    padding: 0;
+    background-color: transparent;
+    justify-content: space-between;
+
+    &--index-desktop {
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .page-header__top {
+    padding-top: 16px;
+    padding-left: 111px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  .page-header__nav {
+    width: 478px;
+    padding-top: 52px;
+    padding-right: 110px;
+  }
 }

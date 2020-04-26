@@ -1,16 +1,16 @@
 .btn {
-  display: block;
-  margin: auto;
+  display: inline-block;
   width: 280px;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  color: $whiteColor;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   &--selection {
+    text-align: center;
     background-color: $greenBtn;
   }
 
@@ -20,6 +20,8 @@
     line-height: 20px;
     text-align: center;
     background-color: $greenBtn;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &--show {
@@ -28,5 +30,37 @@
     line-height: 20px;
     color: $grayText;
     background-color: $grayBtn;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn--selection {
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .btn--order {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+  }
+
+  .btn--show {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn--order {
+    width: 170px;
+  }
+
+  .btn--show {
+    width: 170px;
   }
 }

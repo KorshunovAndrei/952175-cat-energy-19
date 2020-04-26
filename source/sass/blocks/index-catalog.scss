@@ -1,6 +1,6 @@
 .index-catalog {
-  margin: 0;
   padding: 20px;
+  padding-bottom: 12px;
 }
 
 .index-catalog-list {
@@ -12,29 +12,230 @@
   font-family: "Arial", sans-serif;
   color: $grayText;
   margin: 0;
-  margin-bottom: 20px;
-  padding: 20px 24px;
+  padding: 10px;
+  padding-bottom: 18px;
 
-  p {
-    margin: 0;
-    margin-bottom: 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid $grayBorder;
-  }
-
-  a {
-    @include OswaldRegular;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $blackText;
+  &--slim {
+    margin-bottom: 19px;
   }
 }
 
-.index-catalog__title {
+.index-catalog-list__text {
+  margin: 10px;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $grayBorder;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.index-catalog-list__link {
+  @include OswaldRegular;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $blackText;
+  padding-left: 10px;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 108px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.index-catalog-list__title {
   @include OswaldRegular;
   text-transform: uppercase;
   margin: 0;
+  padding: 14px 12px;
   font-size: 24px;
   line-height: 37px;
+  color: $blackText;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $greenBackground;
+    margin-right: 20px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &--slim::after {
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    top: 13px;
+    left: 21px;
+  }
+
+  &--pro::after {
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    top: 26px;
+    left: 4px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .index-catalog {
+    padding: 0 30px;
+    margin-bottom: 14px;
+  }
+
+  .index-catalog-list__item {
+    padding: 42px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+
+    &--pro {
+      margin-bottom: 0;
+    }
+  }
+
+  .index-catalog-list__title {
+    margin-top: 42px;
+    font-size: 36px;
+    line-height: 37px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+
+    &--slim::after {
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/icon-cat-slim.svg");
+      top: 18px;
+      left: 434px;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/icon-cat-pro.svg");
+      top: 74px;
+      left: 370px;
+    }
+  }
+
+  .index-catalog-list__text {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    width: 375px;
+    margin-bottom: 36px;
+
+    &--pro {
+      width: 340px;
+    }
+  }
+
+  .index-catalog-list__link {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+
+    &::after {
+      top: 6px;
+      left: 140px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-catalog {
+    margin: 0;
+    padding: 0;
+  }
+
+  .index-catalog-list {
+    margin: 0;
+    padding: 60px 68px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .index-catalog-list__item {
+    width: 570px;
+    min-height: 372px;
+    margin: 0;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .index-catalog-list__title {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding: 12px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      position: static;
+      margin-right: 60px;
+    }
+
+    &--slim::after {
+      width: 70px;
+      height: 97px;
+      background-image: url("../img/icon-cat-slim.svg");
+      top: 8px;
+      left: 26px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/icon-cat-pro.svg");
+      top: 36px;
+      left: -10px;
+    }
+  }
+
+  .index-catalog-list__link {
+    margin: 10px;
+    margin-top: 30px;
+    padding: 0;
+
+    &::after {
+      top: 6px;
+      left: 128px;
+    }
+  }
+
+  .index-catalog-list__text {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
 }

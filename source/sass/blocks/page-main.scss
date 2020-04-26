@@ -1,7 +1,7 @@
 .page-main {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: $whiteColor;
 }
 
 .page-main__title {
@@ -12,4 +12,22 @@
   border-bottom: 1px solid $grayBorder;
   margin: 0;
   padding: 20px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    margin: 10px;
+    font-size: 60px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    margin: 20px;
+    margin-bottom: 10px;
+    padding-left: 90px;
+    font-size: 60px;
+  }
 }

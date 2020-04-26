@@ -1,0 +1,12 @@
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-left: 90px;
+    padding-right: 100px;
+  }
+}

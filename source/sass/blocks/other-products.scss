@@ -4,6 +4,15 @@
   padding: 20px;
 }
 
+.other-products__plus {
+  margin: 18px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: $whiteColor;
+  background-image: url("../img/icon-plus-mobile.svg");
+}
+
 .other-products__text {
   @include OswaldRegular;
   font-size: 16px;
@@ -11,6 +20,7 @@
   text-transform: uppercase;
   color: $blackText;
   margin: 0;
+  margin-top: 2px;
 }
 
 .other-products__comment {
@@ -20,4 +30,61 @@
   color: $grayText;
   margin-top: 5px;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .other-products {
+    width: 324px;
+    min-height: 430px;
+    margin-top: 96px;
+    margin-bottom: 44px;
+    padding: 0;
+    border: 1px solid $grayBorder;
+    position: relative;
+  }
+
+  .other-products__plus {
+    margin: 52px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-plus.svg");
+  }
+
+  .other-products__text {
+    width: 150px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .other-products__comment {
+    width: 170px;
+    margin: auto;
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .other-products__link {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-products {
+    width: 245px;
+    margin-left: 6px;
+    margin-bottom: 50px;
+  }
+
+  .other-products__plus {
+    margin-bottom: 50px;
+  }
+
+  .other-products__link {
+    bottom: 42px;
+  }
 }
