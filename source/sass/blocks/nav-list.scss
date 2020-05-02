@@ -7,12 +7,26 @@
 .nav-list__item {
   border-top: 1px solid $grayBorder;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 }
 
 .nav-list__link {
   color: $blackText;
   text-decoration: none;
+  border-bottom: 2px solid $greenBorder;
+  padding-bottom: 7px;
+
+  &[href] {
+    border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -44,7 +58,12 @@
     margin: 0;
 
     .nav-list__link--index {
+      border-bottom: 2px solid $whiteColor;
       color: $whiteColor;
+
+      &[href] {
+        border: none;
+      }
     }
   }
 

@@ -1,6 +1,7 @@
 .social {
   @include ClearList;
   display: flex;
+  justify-content: space-between;
   width: 126px;
   align-items: center;
   min-height: 62px;

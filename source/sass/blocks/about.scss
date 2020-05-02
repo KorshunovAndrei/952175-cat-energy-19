@@ -65,13 +65,15 @@
 }
 
 .about__item-text {
-  width: 200px;
+  width: 80%;
   margin: 0;
   padding-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .about {
+    max-width: 880px;
+    margin: auto;
     padding: 30px;
   }
 
@@ -150,6 +152,7 @@
 
 @media (min-width: $desktop-width) {
   .about {
+    max-width: 100%;
     padding: 110px;
     padding-top: 8px;
   }

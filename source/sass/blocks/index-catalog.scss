@@ -51,6 +51,15 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &:hover::after {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .index-catalog-list__title {
@@ -106,8 +115,10 @@
   }
 
   .index-catalog-list__item {
+    width: 624px;
     padding: 42px;
     padding-top: 20px;
+    margin: auto;
     margin-bottom: 30px;
 
     &--pro {
@@ -124,7 +135,7 @@
       width: 200px;
       height: 200px;
       position: absolute;
-      right: 0;
+      left: 404px;
       top: 30px;
     }
 

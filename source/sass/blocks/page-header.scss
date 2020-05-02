@@ -50,12 +50,30 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.page-header__nav {
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
+    justify-content: space-between;
     padding: 20px 0;
+    margin-bottom: 4px;
   }
 
   .page-header__top {
@@ -72,7 +90,9 @@
   }
 
   .page-header__nav {
+    display: block;
     width: 438px;
+    margin-right: 31px;
   }
 
   .page-header__toggle {
