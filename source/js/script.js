@@ -10,7 +10,7 @@ navToggle.addEventListener("click", function(){
   if (navToggle.classList.contains("page-header__toggle--on")) {
     navToggle.classList.remove("page-header__toggle--on");
     navToggle.classList.add("page-header__toggle--off");
-  } 
+  }
   else {
     navToggle.classList.add("page-header__toggle--on");
     navToggle.classList.remove("page-header__toggle--off");
@@ -18,7 +18,7 @@ navToggle.addEventListener("click", function(){
 
   if (nav.classList.contains("page-header__nav--opened")) {
     nav.classList.remove("page-header__nav--opened");
-  } 
+  }
   else {
     nav.classList.add("page-header__nav--opened");
   }
