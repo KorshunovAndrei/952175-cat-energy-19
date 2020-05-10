@@ -12,7 +12,7 @@
   display: block;
   text-align: center;
   margin: 0;
-  padding-top: 34px;
+  padding-top: 17px;
   padding-bottom: 28px;
   border-bottom: 1px solid $grayBorder;
 
@@ -28,9 +28,8 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-height: 80px;
   border-top: 1px solid $grayBorder;
+  padding-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,13 +38,27 @@
     align-items: center;
     min-height: 150px;
     box-sizing: border-box;
+    padding: 32px;
   }
 
   .page-footer__title {
+    padding-top: 31px;
     border-bottom: none;
   }
 
   .page-footer__copyright {
     border-top: none;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__bottom {
+    padding-left: 109px;
+    padding-right: 111px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 6px;
   }
 }

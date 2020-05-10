@@ -1,0 +1,150 @@
+.location {
+  padding-top: 28px;
+
+  &--gray {
+    background-color: $grayBackground;
+  }
+}
+
+.location__wrap {
+  display: flex;
+}
+
+.location__offer {
+  @include OswaldRegular;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-left: 18px;
+  width: 125px;
+}
+
+.location__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  width: 140px;
+  padding-left: 18px;
+  padding-bottom: 26px;
+  color: $grayText;
+}
+
+.location__map {
+  content: "";
+  width: 320px;
+  height: 364px;
+  position: relative;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  margin: auto;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 62px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 48%;
+    left: 40%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .location {
+    justify-content: space-between;
+  }
+
+  .location__offer {
+    font-size: 20px;
+    line-height: 25px;
+    width: 160px;
+    margin: 38px;
+    margin-bottom: 28px;
+    padding-left: 32px;
+  }
+
+  .location__wrap {
+    justify-content: space-between;
+  }
+
+  .location__address {
+    font-size: 16px;
+    width: 180px;
+    text-align: right;
+    margin: 38px;
+    margin-bottom: 28px;
+    padding-right: 32px;
+
+    .location__address-span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  .location__map {
+    margin: auto;
+    width: 768px;
+    height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 124px;
+      height: 106px;
+      background-image: url("../img/map-pin.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 37%;
+      left: 42%;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .location {
+    display: block;
+    padding-top: 0;
+    position: relative;
+  }
+
+  .location__wrap {
+    width: 570px;
+    min-height: 201px;
+    position: absolute;
+    z-index: 1;
+    background-color: $whiteColor;
+    align-items: center;
+    left: 110px;
+    top: 95px;
+  }
+
+  .location__offer {
+    margin-bottom: 34px;
+    padding-left: 38px;
+  }
+
+  .location__address {
+    text-align: left;
+    margin-bottom: 6px;
+  }
+
+  .location__map {
+    width: 100%;
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+
+    &::after {
+      top: 150px;
+      left: 998px;
+    }
+  }
+}

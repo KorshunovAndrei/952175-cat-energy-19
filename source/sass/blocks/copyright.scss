@@ -1,4 +1,44 @@
 .copyright {
   font-family: "Arial", sans-serif;
   color: $grayText;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .copyright__link-logo {
+    fill: $greenBtn;
+  }
+}
+
+.copyright__title {
+  margin-top: 17px;
+}
+
+.copyright__link {
+  display: block;
+  width: 40px;
+  height: 44px;
+  margin-left: auto;
+  position: relative;
+  left: 6px;
+  top: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__title {
+    margin-top: 8px;
+  }
+
+  .copyright__link {
+    left: 8px;
+    top: 0;
+    margin-left: 8px;
+
+    &::before {
+      display: none;
+    }
+  }
 }

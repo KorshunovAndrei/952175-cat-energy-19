@@ -1,0 +1,131 @@
+.additional-products {
+  border-top: 3px solid $greenBorder;
+  margin-top: 42px;
+  padding-top: 23px;
+  position: relative;
+}
+
+.additional-products__title {
+  @include OswaldRegular;
+  font-size: 24px;
+  line-height: 24px;
+  width: 248px;
+  position: absolute;
+  background-color: $whiteColor;
+  margin: 0;
+  padding-left: 19px;
+  top: -17px;
+}
+
+.additional-products__list {
+  @include ClearList;
+  padding: 18px;
+}
+
+.additional-products__item {
+  border-top: 1px solid $grayBorder;
+  padding-top: 13px;
+
+  &:last-child {
+    border-bottom: 1px solid $grayBorder;
+  }
+}
+
+.additional-products__table {
+  @include ClearList;
+  width: 100%;
+}
+
+.additional-products__str {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-products__link {
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products {
+    margin-top: 35px;
+  }
+
+  .additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    width: 375px;
+    left: 28px;
+    top: -25px;
+    padding-left: 38px;
+  }
+
+  .additional-products__list {
+    margin: 12px;
+    margin-top: 50px;
+  }
+
+  .additional-products__item {
+    padding: 26px 36px;
+    padding-bottom: 9px;
+    border-left: 1px solid $grayBorder;
+    border-right: 1px solid $grayBorder;
+  }
+
+  .additional-products__table {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-products__link {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .additional-products__str {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    margin-top: 36px;
+  }
+
+  .additional-products__list {
+    width: 895px;
+    padding: 0;
+    margin: 70px;
+    margin-left: 110px;
+  }
+
+  .additional-products__item {
+    padding: 0;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    border-right: none;
+    border-left: none;
+    position: relative;
+  }
+
+  .additional-products__title {
+    margin-left: 42px;
+  }
+
+  .additional-products__table {
+    width: 610px;
+  }
+
+  .additional-products__str {
+    margin-top: 5px;
+  }
+
+  .additional-products__link {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 13px;
+  }
+}

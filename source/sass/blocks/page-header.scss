@@ -38,6 +38,7 @@
   height: 18px;
   background-color: $whiteColor;
   border: none;
+  margin-top: 3px;
 
   &--on {
     background-image: url("../img/icon-mobile-menu.svg");
@@ -72,7 +73,8 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding-top: 24px;
+    padding-bottom: 14px;
     margin-bottom: 4px;
   }
 
@@ -129,6 +131,6 @@
   .page-header__nav {
     width: 478px;
     padding-top: 52px;
-    padding-right: 110px;
+    padding-right: 79px;
   }
 }
