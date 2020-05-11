@@ -1,15 +1,27 @@
 // background variables
 $greenBackground: #65a93c;
+$greenHoverBtn:#5eaa2f;
 $grayBackground: #f2f2f2;
+$grayHoverBtn: #ebebeb;
 
 // btn variables
 $greenBtn: #68b738;
 $grayBtn: #f2f2f2;
 
 // border variables
+$greenBorder: #68b738;
 $grayBorder: #eaeaea;
 $grayBottom: #cfcfcf;
+$grayBorderTable: #cdcdcd;
 $inputBorder: #e6e6e6;
+$blackBorder: #000000;
+$inputError: #ff8282;
+$hoverRadio: #d2d2d2;
+$grayState: #b8b8b8;
+$graySlider: #dcdccd;
+$graySliderAlpha: rgba(0, 0, 0, 0.15);
+$graySliderAlpha2: rgba(0, 0, 0, 0.25);
+$graySliderAlpha3: rgba(0, 0, 0, 0.3);
 
 // text variables
 $blackText: #111111;
@@ -18,3 +30,5 @@ $grayPlus: #d3d3d3;
 $grayNum: #f2f2f2;
 
 $whiteColor: #ffffff;
+$whiteColorAlpha: rgba(255, 255, 255, 0.3);
+$blackColorAlpha: rgba(0, 0, 0, 0.3);

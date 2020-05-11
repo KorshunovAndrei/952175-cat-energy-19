@@ -1,0 +1,96 @@
+.slider {
+  @include OswaldRegular;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 198px;
+  box-sizing: border-box;
+  padding-bottom: 36px;
+  margin: auto;
+}
+
+.slider__state {
+  margin: 0;
+}
+
+.slider__scale {
+  width: 82px;
+  height: 14px;
+  border: 1px solid $grayBorder;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 12px;
+  background-color: $whiteColor;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.slider__bar {
+  width: 50%;
+  height: 100%;
+  background-color: $greenBorder;
+  border-radius: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+    width: 570px;
+  }
+
+  .slider__state {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted $grayState;
+  }
+
+  .slider__scale {
+    width: 430px;
+    height: 7px;
+    padding: 0;
+    background-color: $graySlider;
+  }
+
+  .slider__bar {
+    width: 32px;
+    height: 32px;
+    background-color: $whiteColor;
+    border-radius: 50%;
+    border: 1px solid $graySlider;
+    box-shadow: 0 3px 5px $graySliderAlpha;
+    position: absolute;
+    bottom: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $greenBorder;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px $graySliderAlpha2;
+    }
+
+    &:active {
+      border-color: $greenBorder;
+      box-shadow: 0 3px 5px $graySliderAlpha3;
+    }
+  }
+}

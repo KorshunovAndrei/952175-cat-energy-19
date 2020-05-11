@@ -1,5 +1,5 @@
 .btn {
-  display: inline-block;
+  display: block;
   width: 280px;
   font-size: 14px;
   line-height: 18px;
@@ -8,6 +8,15 @@
   color: $whiteColor;
   padding-top: 12px;
   padding-bottom: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $greenHoverBtn;
+  }
+
+  &:active {
+    color: $whiteColorAlpha;
+  }
 
   &--selection {
     text-align: center;
@@ -30,37 +39,94 @@
     line-height: 20px;
     color: $grayText;
     background-color: $grayBtn;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+
+    &:hover {
+      background-color: $grayHoverBtn;
+    }
+
+    &:active {
+      color: $blackColorAlpha;
+    }
+  }
+
+  &--additional {
+    @include OswaldRegular;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: $greenBtn;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &--form {
+    @include OswaldRegular;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $greenBtn;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .btn--selection {
-    width: 245px;
-    font-size: 20px;
-    line-height: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  .btn {
+    &--selection {
+      width: 245px;
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
 
-  .btn--order {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 250px;
-  }
+    &--order {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 250px;
+    }
 
-  .btn--show {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 250px;
+    &--show {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 250px;
+    }
+
+    &--additional {
+      margin: 0;
+      width: 100%;
+    }
+
+    &--form {
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .btn--order {
-    width: 170px;
-  }
+  .btn {
+    &--order {
+      width: 170px;
+    }
 
-  .btn--show {
-    width: 170px;
+    &--show {
+      width: 170px;
+    }
+
+    &--additional {
+      margin: 0;
+      width: 243px;
+    }
+
+    &--form {
+      width: 568px;
+      padding-bottom: 17px;
+    }
   }
 }
