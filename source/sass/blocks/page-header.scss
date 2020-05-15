@@ -21,8 +21,6 @@
   display: block;
   width: 191px;
   height: 38px;
-  background-image: url("../img/logo-mobile.svg");
-  background-repeat: no-repeat;
 
   &:hover {
     opacity: 0.8;
@@ -86,8 +84,6 @@
   .page-header__logo {
     width: 173px;
     height: 58px;
-    background-image: url("../img/logo-tablet.svg");
-    background-repeat: no-repeat;
     margin-right: 96px;
   }
 
@@ -124,8 +120,6 @@
   .page-header__logo {
     width: 202px;
     height: 59px;
-    background-image: url("../img/logo-desktop.svg");
-    background-repeat: no-repeat;
   }
 
   .page-header__nav {
