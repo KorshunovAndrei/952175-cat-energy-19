@@ -1,0 +1,19 @@
+.extra-list {
+  @include ClearList;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-list {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-list {
+    width: 1262px;
+  }
+}

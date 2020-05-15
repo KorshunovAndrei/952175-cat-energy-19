@@ -107,6 +107,15 @@
       padding-bottom: 15px;
     }
   }
+
+  .button-block {
+    box-sizing: border-box;
+    width: 624px;
+    margin: auto;
+    margin-top: 18px;
+    display: flex;
+    margin-bottom: 51px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -128,5 +137,12 @@
       width: 568px;
       padding-bottom: 17px;
     }
+  }
+
+  .button-block {
+    width: 1000px;
+    margin-top: 26px;
+    margin-bottom: 47px;
+    margin-left: 111px;
   }
 }

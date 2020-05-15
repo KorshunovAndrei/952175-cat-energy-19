@@ -1,0 +1,13 @@
+.input-error {
+  fill: $inputError;
+
+  &:valid {
+    border-color: $grayText;
+    fill: $grayText;
+  }
+
+  &:invalid {
+    border-color: $inputError;
+    fill: $inputError;
+  }
+}

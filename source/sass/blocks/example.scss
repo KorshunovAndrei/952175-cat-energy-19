@@ -36,13 +36,17 @@
   margin-bottom: 32px;
 }
 
-.example__img {
+.example__img-wrap {
   width: 320px;
   height: 240px;
 
   &--after {
     display: none;
   }
+}
+
+.example__img {
+  width: 100%;
 }
 
 .example__slider {
@@ -136,7 +140,7 @@
     }
   }
 
-  .example__img {
+  .example__img-wrap {
     width: 100%;
     height: 517px;
     position: absolute;
@@ -154,6 +158,10 @@
       top: -190px;
       left: -331px;
     }
+  }
+
+  .example__img {
+    width: 690px;
   }
 
   .example__slider {
@@ -229,7 +237,7 @@
     }
   }
 
-  .example__img {
+  .example__img-wrap {
     width: 364px;
     height: 517px;
     position: absolute;
@@ -251,7 +259,7 @@
   }
 
   .example__slider {
-    left: 325px;
-    bottom: -474px;
+    left: 1045px;
+    bottom: 14px;
   }
 }

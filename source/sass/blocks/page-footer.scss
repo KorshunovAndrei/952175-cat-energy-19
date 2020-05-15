@@ -53,6 +53,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1440px;
+  }
+
   .page-footer__bottom {
     padding-left: 109px;
     padding-right: 111px;

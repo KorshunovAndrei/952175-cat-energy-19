@@ -1,0 +1,15 @@
+@media (min-width: $desktop-width) {
+  .form-wrap {
+    padding-left: 41px;
+    padding-right: 112px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrap-desktop {
+    display: flex;
+    padding-bottom: 12px;
+  }
+}

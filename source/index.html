@@ -95,20 +95,20 @@
       </div>
       <div class="example__container">
         <div class="example__images example__images--before">
-          <div class="example__img example__img--before">
+          <div class="example__img-wrap example__img-wrap--before">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img src="img/before-mobile@1x.png" alt="Фото кота до">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" alt="Фото кота до">
             </picture>
           </div>
         </div>
         <div class="example__images example__images--after">
-          <div class="example__img example__img--after">
+          <div class="example__img-wrap example__img-wrap--after">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-              <img src="img/after-mobile@1x.png" alt="Фото кота после">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="example__img" src="img/after-mobile@1x.png" alt="Фото кота после">
             </picture>
           </div>
         </div>
