@@ -11,6 +11,8 @@
 }
 
 .social__logo {
+  fill: $grayIcon;
+
   &:hover {
     fill: $greenBtn;
   }

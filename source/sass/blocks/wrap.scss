@@ -1,13 +1,25 @@
+@media (min-width: $tablet-width) {
+  .form-wrap {
+    &--contacts {
+      padding-left: 52px;
+      padding-right: 49px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form-wrap {
     padding-left: 41px;
     padding-right: 112px;
     display: flex;
     justify-content: space-between;
-  }
-}
 
-@media (min-width: $desktop-width) {
+    &--contacts {
+      padding-left: 95px;
+      padding-right: 95px;
+    }
+  }
+
   .wrap-desktop {
     display: flex;
     padding-bottom: 12px;
