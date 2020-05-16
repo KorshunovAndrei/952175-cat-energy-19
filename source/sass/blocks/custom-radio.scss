@@ -3,8 +3,6 @@
   align-items: center;
   margin-top: 10px;
   padding-bottom: 2px;
-  padding-left: 20px;
-  padding-right: 20px;
   cursor: pointer;
 
   &:hover .radio-fake {
@@ -48,6 +46,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .radio-label {
+    padding-left: 22px;
+  }
+
   .radio-fake {
     width: 40px;
     height: 40px;
